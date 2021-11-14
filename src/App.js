@@ -1,12 +1,12 @@
 import './App.css';
 import {useState} from 'react';
-import iphone from './images/image.jpg'
+import iphone from './images/image.jpg';
 
 function App() {
   const [count, setCount] = useState(0);
   return (
     <div className="app">
-      <img src={iphone} />
+      <img src={iphone} alt=""/>
       <h2>Iphone 13</h2>
       <h2>Selecciona la cantidad que deseas comprar:</h2>
       <h1 className={count > 0 ? "positive" : null}>
